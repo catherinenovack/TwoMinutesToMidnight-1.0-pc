@@ -1,0 +1,67 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "renpy/common/00gamemenu.rpy", line 173, in script
+    $ ui.interact()
+  File "renpy/common/00gamemenu.rpy", line 173, in <module>
+    $ ui.interact()
+Exception: Open text tag at end of string u'{font=Computerfont.t'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/00gamemenu.rpy", line 173, in script
+    $ ui.interact()
+  File "C:\Users\cathn\Documents\Ren'Py\TwoMinutesToMidnight-1.0-dists\TwoMinutesToMidnight-1.0-pc\renpy\ast.py", line 862, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\cathn\Documents\Ren'Py\TwoMinutesToMidnight-1.0-dists\TwoMinutesToMidnight-1.0-pc\renpy\python.py", line 1912, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "renpy/common/00gamemenu.rpy", line 173, in <module>
+    $ ui.interact()
+  File "C:\Users\cathn\Documents\Ren'Py\TwoMinutesToMidnight-1.0-dists\TwoMinutesToMidnight-1.0-pc\renpy\ui.py", line 287, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\cathn\Documents\Ren'Py\TwoMinutesToMidnight-1.0-dists\TwoMinutesToMidnight-1.0-pc\renpy\display\core.py", line 2649, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "C:\Users\cathn\Documents\Ren'Py\TwoMinutesToMidnight-1.0-dists\TwoMinutesToMidnight-1.0-pc\renpy\display\core.py", line 3033, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "C:\Users\cathn\Documents\Ren'Py\TwoMinutesToMidnight-1.0-dists\TwoMinutesToMidnight-1.0-pc\renpy\display\core.py", line 511, in visit_all
+    d.visit_all(callback)
+  File "C:\Users\cathn\Documents\Ren'Py\TwoMinutesToMidnight-1.0-dists\TwoMinutesToMidnight-1.0-pc\renpy\display\core.py", line 511, in visit_all
+    d.visit_all(callback)
+  File "C:\Users\cathn\Documents\Ren'Py\TwoMinutesToMidnight-1.0-dists\TwoMinutesToMidnight-1.0-pc\renpy\display\core.py", line 511, in visit_all
+    d.visit_all(callback)
+  File "C:\Users\cathn\Documents\Ren'Py\TwoMinutesToMidnight-1.0-dists\TwoMinutesToMidnight-1.0-pc\renpy\display\core.py", line 511, in visit_all
+    d.visit_all(callback)
+  File "C:\Users\cathn\Documents\Ren'Py\TwoMinutesToMidnight-1.0-dists\TwoMinutesToMidnight-1.0-pc\renpy\display\screen.py", line 428, in visit_all
+    self.child.visit_all(callback)
+  File "C:\Users\cathn\Documents\Ren'Py\TwoMinutesToMidnight-1.0-dists\TwoMinutesToMidnight-1.0-pc\renpy\display\core.py", line 511, in visit_all
+    d.visit_all(callback)
+  File "C:\Users\cathn\Documents\Ren'Py\TwoMinutesToMidnight-1.0-dists\TwoMinutesToMidnight-1.0-pc\renpy\display\core.py", line 511, in visit_all
+    d.visit_all(callback)
+  File "C:\Users\cathn\Documents\Ren'Py\TwoMinutesToMidnight-1.0-dists\TwoMinutesToMidnight-1.0-pc\renpy\display\core.py", line 511, in visit_all
+    d.visit_all(callback)
+  File "C:\Users\cathn\Documents\Ren'Py\TwoMinutesToMidnight-1.0-dists\TwoMinutesToMidnight-1.0-pc\renpy\display\core.py", line 511, in visit_all
+    d.visit_all(callback)
+  File "C:\Users\cathn\Documents\Ren'Py\TwoMinutesToMidnight-1.0-dists\TwoMinutesToMidnight-1.0-pc\renpy\display\core.py", line 511, in visit_all
+    d.visit_all(callback)
+  File "C:\Users\cathn\Documents\Ren'Py\TwoMinutesToMidnight-1.0-dists\TwoMinutesToMidnight-1.0-pc\renpy\display\core.py", line 511, in visit_all
+    d.visit_all(callback)
+  File "C:\Users\cathn\Documents\Ren'Py\TwoMinutesToMidnight-1.0-dists\TwoMinutesToMidnight-1.0-pc\renpy\display\core.py", line 511, in visit_all
+    d.visit_all(callback)
+  File "C:\Users\cathn\Documents\Ren'Py\TwoMinutesToMidnight-1.0-dists\TwoMinutesToMidnight-1.0-pc\renpy\display\core.py", line 511, in visit_all
+    d.visit_all(callback)
+  File "C:\Users\cathn\Documents\Ren'Py\TwoMinutesToMidnight-1.0-dists\TwoMinutesToMidnight-1.0-pc\renpy\display\core.py", line 508, in visit_all
+    for d in self.visit():
+  File "C:\Users\cathn\Documents\Ren'Py\TwoMinutesToMidnight-1.0-dists\TwoMinutesToMidnight-1.0-pc\renpy\text\text.py", line 1586, in visit
+    self.update()
+  File "C:\Users\cathn\Documents\Ren'Py\TwoMinutesToMidnight-1.0-dists\TwoMinutesToMidnight-1.0-pc\renpy\text\text.py", line 1563, in update
+    tokens = self.tokenize(text)
+  File "C:\Users\cathn\Documents\Ren'Py\TwoMinutesToMidnight-1.0-dists\TwoMinutesToMidnight-1.0-pc\renpy\text\text.py", line 1980, in tokenize
+    tokens.extend(textsupport.tokenize(i))
+  File "textsupport.pyx", line 120, in renpy.text.textsupport.tokenize
+Exception: Open text tag at end of string u'{font=Computerfont.t'.
+
+Windows-8-6.2.9200
+Ren'Py 7.0.0.196
+Two Minutes to Midnight 1.0
+Sun Dec 30 15:24:09 2018
